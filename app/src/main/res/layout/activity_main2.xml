@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:background="#67948F"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="192dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginBottom="6dp"
+            android:text="Contacts App"
+            android:textColor="#673AB7"
+            android:textFontWeight="50"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/immood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/immood"
+            android:layout_width="99dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@+id/imphone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contact"
+            app:srcCompat="@drawable/happy"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imphone"
+            android:layout_width="93dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@+id/imweb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/immood"
+            app:srcCompat="@drawable/phone" />
+
+        <ImageView
+            android:id="@+id/imweb"
+            android:layout_width="92dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/imlocation"
+            app:layout_constraintTop_toBottomOf="@+id/imphone"
+            app:srcCompat="@drawable/web"
+            tools:layout_editor_absoluteX="165dp" />
+
+        <ImageView
+            android:id="@+id/imlocation"
+            android:layout_width="94dp"
+            android:layout_height="82dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/btncreate"
+            app:layout_constraintTop_toBottomOf="@+id/imweb"
+            app:srcCompat="@drawable/location"
+            tools:layout_editor_absoluteX="165dp" />
+
+        <Button
+            android:id="@+id/btncreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="53dp"
+            android:text="Create new contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imlocation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
